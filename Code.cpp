@@ -48,6 +48,17 @@ for (const auto& row : board)
 winner = '.';
     return true;
 }
+int main() {
+    vector<vector<char>> board(3, vector<char>(3, '.')); 
+    bool player1Turn = true;
+    char winner;
+
+    while (!gameOver(board, winner))
+        { 
+        printBoard(board);
+        char currentPlayer = (player1Turn) ? 'X' : 'O';
+
+
 
 
 
