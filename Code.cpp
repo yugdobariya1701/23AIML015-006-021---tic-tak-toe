@@ -45,6 +45,10 @@ for (const auto& row : board)
             }
         }
     }
+winner = '.';
+    return true;
+}
+
 
 
 
