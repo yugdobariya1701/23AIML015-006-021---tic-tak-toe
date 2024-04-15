@@ -57,6 +57,17 @@ int main() {
         { 
         printBoard(board);
         char currentPlayer = (player1Turn) ? 'X' : 'O';
+ int row, col;
+        cout << "Player " << currentPlayer << ", enter your move (row and column): ";
+        cin >> row >> col;
+
+        if (row < 0 || row > 2 || col < 0 || col > 2 || board[row][col] != '.') {
+            cout << "Invalid move. Try again.\n";
+            continue;
+        }
+        board[row][col] = currentPlayer;
+        player1Turn = !player1Turn;
+    }
 
 
 
