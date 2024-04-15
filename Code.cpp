@@ -68,7 +68,16 @@ int main() {
         board[row][col] = currentPlayer;
         player1Turn = !player1Turn;
     }
+ printBoard(board);
 
+    if (winner != '.') {
+        cout << "Player " << winner << " wins!" << endl;
+    } else {
+        cout << "It's a tie!" << endl;
+    }
+
+    return 0;
+}
 
 
 
