@@ -1,1 +1,2 @@
-
+here, 23aiml015,23aiml006,23aiml021 we are making project of tic tac toe game.discription of this project is given below.
+A Tic Tac Toe program in C++ is like a digital version of the classic game where two players take turns marking X and O on a 3x3 grid. The program allows players to input their moves, checks for a winner after each move, and displays the updated board. It's a fun way to practice programming skills while enjoying a timeless game!.
