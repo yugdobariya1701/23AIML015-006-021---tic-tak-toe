@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 void printBoard(const vector<vector<char>>& board)
 {
@@ -34,10 +35,19 @@ bool gameOver(const vector<vector<char>>& board, char& winner)
         winner = board[0][2];
         return true;
     }
+for (const auto& row : board) 
+{
+        for (char cell : row)
+            {
+            if (cell == '.')
+            {
+                return false; 
+            }
+        }
+    }
 
 
 
 
 
-int main(){
-}
+
